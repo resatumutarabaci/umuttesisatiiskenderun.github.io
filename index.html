@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KODUNU_BURAYA_YAZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KODUNU_BURAYA_YAZ');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umut & Berkay Tesisat | 7/24 Profesyonel Cihazlı Çözümler</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <meta name="description" content="İskenderun, Arsuz, Belen, Payas ve Dörtyol'da 7/24 cihazla kırmadan su kaçağı tespiti ve tıkanıklık açma hizmeti.">
+    <link rel="canonical" href="https://umuttesisatiiskenderun.com/" />
+
+    <style>
+        :root {
+            --primary: #0056b3;
+            --accent: #e31e24;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --umut-wa: #25d366;
+            --berkay-wa: #128c7e;
+            --yellow: #f1c40f;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: var(--dark); line-height: 1.6; scroll-behavior: smooth; background: #fff; }
+        a { text-decoration: none; transition: 0.3s; }
+
+        header {
+            background: var(--white);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-size: 1.6rem; font-weight: 700; color: var(--dark); }
+        .logo span { color: var(--accent); }
+        
+        .header-contacts { display: flex; flex-direction: column; gap: 5px; }
+        .nav-call { 
+            background: var(--accent); 
+            color: white; 
+            padding: 5px 12px; 
+            border-radius: 4px; 
+            font-weight: 600; 
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        /* Hizmet Detayları Bölümü - Yeni Tasarım */
+        .faq-section { padding: 60px 5%; background: var(--white); }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: var(--primary); font-weight: 700; }
+        
+        .faq-container { max-width: 1000px; margin: 0 auto; }
+        .faq-item { 
+            background: var(--light); 
+            margin-bottom: 25px; 
+            padding: 30px; 
+            border-radius: 15px; 
+            border-left: 8px solid var(--primary); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+        }
+        .faq-item h4 { color: var(--primary); margin-bottom: 15px; font-size: 1.3rem; display: flex; align-items: center; gap: 12px; font-weight: 700; }
+        .highlight-red { color: var(--accent); font-weight: 700; }
+
+        /* Mavi Güven Çubuğu - Görseldeki Gibi */
+        .trust-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 40px 5%;
+            text-align: center;
+        }
+        .trust-item h3 { font-size: 1.2rem; margin-bottom: 8px; color: var(--yellow); font-weight: 700; }
+        .trust-item p { font-size: 1rem; opacity: 0.9; }
+
+        /* Teknolojik Cihazlar & Galeri */
+        .section { padding: 60px 5%; }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        .gallery-item {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            border-bottom: 5px solid var(--accent);
+        }
+        .gallery-item img { width: 100%; height: 250px; object-fit: contain; padding: 20px; }
+        .gallery-item h4 { padding: 15px; background: var(--light); color: var(--primary); font-weight: 600; }
+
+        /* Uzmanlık Alanları Kartları */
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .s-card {
+            background: var(--yellow);
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            border-bottom: 6px solid var(--accent);
+        }
+        .s-card h3 { color: var(--accent); margin-bottom: 12px; font-weight: 800; }
+
+        /* Müşteri Yorumları */
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .review-card {
+            background: #fafafa;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-top: 6px solid var(--yellow);
+        }
+        .stars { color: var(--yellow); margin-bottom: 15px; font-size: 1.4rem; }
+
+        /* İletişim & Kartvizit */
+        .contact-box {
+            background: var(--dark);
+            color: white;
+            padding: 70px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            align-items: center;
+        }
+        .card-img { width: 100%; border-radius: 15px; box-shadow: 0 0 25px rgba(255,255,255,0.15); }
+        .phone-big { font-size: 2.5rem; color: white; font-weight: 800; display: block; margin: 10px 0; }
+        .usta-name { color: var(--accent); font-weight: 700; font-size: 1.3rem; margin-bottom: 5px; }
+
+        /* WhatsApp Butonları */
+        .wa-container {
+            position: fixed; bottom: 25px; right: 25px;
+            display: flex; flex-direction: column; gap: 15px; z-index: 2000;
+        }
+        .wa-btn {
+            color: white; width: 65px; height: 65px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 35px; box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+            position: relative;
+        }
+        .wa-btn span {
+            position: absolute; right: 80px; background: rgba(0,0,0,0.85);
+            padding: 6px 15px; border-radius: 6px; font-size: 14px;
+            white-space: nowrap; opacity: 0; transition: 0.3s; pointer-events: none;
+        }
+        .wa-btn:hover span { opacity: 1; }
+        .umut-wa { background: var(--umut-wa); }
+        .berkay-wa { background: var(--berkay-wa); }
+
+        footer { text-align: center; padding: 30px; background: #000; color: #888; font-size: 0.9rem; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">UMUT & BERKAY <span>TESİSAT</span></div>
+        <div class="header-contacts">
+            <a href="tel:05345925446" class="nav-call">0534 592 54 46 - Umut Usta</a>
+            <a href="tel:05317102191" class="nav-call">0531 710 21 91 - Berkay Usta</a>
+        </div>
+    </header>
+
+    <section class="faq-section">
+        <h2 class="section-title">Hizmet Detaylarımız</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h4>📍 Hizmet Bölgelerimiz</h4>
+                <p><span class="highlight-red">İskenderun, Arsuz, Belen, Payas, Dörtyol</span> ve tüm çevre mahallelerimize 7/24 kesintisiz hizmetimiz mevcuttur.</p>
+            </div>
+            <div class="faq-item">
+                <h4>💰 Fiyatlandırma Nasıl Yapılıyor?</h4>
+                <p>Fiyatlarımız yapılacak işin mahiyetine ve kullanılacak teknolojik cihazlara göre belirlenir. Bizi arayarak veya WhatsApp üzerinden arıza görseli paylaşarak ücretsiz ön bilgi ve net fiyat alabilirsiniz.</p>
+            </div>
+            <div class="faq-item">
+                <h4>🛠️ Tespit Süreci Nasıl İşler?</h4>
+                <p>Akustik dinleme ve termal kameralarımızla su kaçağını %100 noktasal olarak tespit ediyoruz. Bu sayede evinizde gereksiz kırım döküm yapmadan sorunu kökten çözüyoruz.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="trust-bar">
+        <div class="trust-item"><h3>Noktasal Tespit</h3><p>Kırmadan arıza bulma.</p></div>
+        <div class="trust-item"><h3>7/24 Servis</h3><p>Acil müdahale ekibi.</p></div>
+        <div class="trust-item"><h3>Garantili İşçilik</h3><p>%100 Müşteri memnuniyeti.</p></div>
+        <div class="trust-item"><h3>Temiz Çalışma</h3><p>Eviniz bizim evimizdir.</p></div>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title">Teknolojik Cihazlarımız</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="termal kamera.png" alt="Termal Kamera"><h4>Termal Kamera</h4></div>
+            <div class="gallery-item"><img src="tesisat-test-pompasi.png" alt="Test Pompası"><h4>Tesisat Test Pompası</h4></div>
+            <div class="gallery-item"><img src="pissu-kacak-cihazi.png" alt="Kanal Görüntüleme"><h4>Kanal Görüntüleme</h4></div>
+            <div class="gallery-item"><img src="dinleme-cihazi.png" alt="Dinleme Cihazı"><h4>Akustik Su Tespiti</h4></div>
+            <div class="gallery-item"><img src="tikanik-acma-makinasi.png" alt="Robotla Açma"><h4>Robotla Tıkanıklık Açma</h4></div>
+            <div class="gallery-item"><img src="petek-temizleme.png" alt="Petek Temizleme"><h4>Makineli Petek Temizliği</h4></div>
+        </div>
+
+        <h2 class="section-title">Uzmanlık Alanlarımız</h2>
+        <div class="services-list">
+            <div class="s-card"><h3>SU KAÇAĞI TESPİTİ</h3><p>Cihazla kırmadan nokta tespiti.</p></div>
+            <div class="s-card"><h3>TIKANIKLIK AÇMA</h3><p>Robot sistemle her türlü gider açma.</p></div>
+            <div class="s-card"><h3>PETEK TEMİZLİĞİ</h3><p>Makineli ve ilaçlı bakım.</p></div>
+            <div class="s-card"><h3>SIHHİ TESİSAT</h3><p>Komple tadilat ve onarım.</p></div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #fafafa;">
+        <h2 class="section-title">Müşterilerimizin Görüşleri</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Umut Usta gece yarısı geldi, robotla tıkanıklığı hemen çözdü. Teşekkürler."</p>
+                <h5>Ahmet Y. (İskenderun)</h5>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Kamerayla kaçağı tam yerinde buldular. Berkay Usta işinin ehli."</p>
+                <h5>Selin K. (Arsuz)</h5>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Petek temizliği sonrası ısınma sorunumuz tamamen bitti. Temiz ve dürüst esnaf."</p>
+                <h5>Mehmet T. (Belen)</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-box" id="iletisim">
+        <div class="contact-text">
+            <h2 style="color: var(--accent); margin-bottom: 30px; font-size: 2.2rem;">7/24 Profesyonel Destek</h2>
+            <div style="margin-bottom: 40px;">
+                <p class="usta-name">Umut Usta</p> 
+                <a href="tel:05345925446" class="phone-big">0534 592 54 46</a>
+            </div>
+            <div>
+                <p class="usta-name">Berkay Usta</p> 
+                <a href="tel:05317102191" class="phone-big">0531 710 21 91</a>
+            </div>
+        </div>
+        <div>
+            <img src="kart-on-yuz.jpg" alt="Umut & Berkay Tesisat Kartvizit" class="card-img">
+        </div>
+    </section>
+
+    <div class="wa-container">
+        <a href="https://wa.me/905317102191" class="wa-btn berkay-wa" target="_blank"><span>Berkay WhatsApp</span> 💬</a>
+        <a href="https://wa.me/905345925446" class="wa-btn umut-wa" target="_blank"><span>Umut WhatsApp</span> 💬</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Umut & Berkay Tesisat - umuttesisatiiskenderun.com</p>
+        <p style="margin-top: 5px; font-size: 0.8rem;">İskenderun ve Çevresi Profesyonel Tesisat Çözümleri</p>
+    </footer>
+
+</body>
+</html>
